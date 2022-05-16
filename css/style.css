@@ -1,0 +1,494 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Work Sans", sans-serif;
+}
+
+.t_left {
+    text-align: left;
+}
+
+.t_center {
+    text-align: center;
+}
+
+.t_right {
+    text-align: right;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {}
+
+.container {
+    margin: 0px 5%;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 99;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+}
+
+.logo_left {
+    width: 35%;
+}
+
+.logo_left img {}
+
+nav {
+    width: 58%;
+    margin-right: 7%;
+}
+
+nav ul {
+    margin-left: 27px;
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 0px;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    font-family: Roboto, sans-serif;
+    padding: 0px 20px;
+    display: block;
+    margin-top: 0px;
+    font-size: 17px;
+    transition: all 0.4s ease 0s;
+    position: relative;
+    line-height: 68px;
+}
+
+nav ul li a span i {
+    font-size: 21px !important;
+    font-weight: 900 !important;
+}
+
+nav ul li:first-child a {
+    color: rgb(167, 116, 50);
+}
+
+nav ul li a:hover {
+    color: rgb(167, 116, 50);
+}
+
+nav ul li a::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-bottom: 3px solid rgb(198, 148, 83);
+    height: 100%;
+    width: 100%;
+    transform: scaleX(0);
+    transition: all 0.3s ease 0s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+nav ul li a:hover::before {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleX(1);
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li ul {
+    position: absolute;
+    top: 100%;
+    left: -30px;
+    width: 280px;
+    background: rgb(255, 255, 255);
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s ease 0s;
+    transform: scaleY(0);
+}
+
+nav ul li ul li:first-child {}
+
+nav ul li ul li:first-child a {
+    color: rgb(0, 0, 0);
+}
+
+nav ul li ul:last-child {
+    padding-bottom: 0px;
+}
+
+nav ul li ul li {
+    display: block;
+}
+
+nav ul li ul li:hover {
+    border: none;
+}
+
+nav ul li ul li a {
+    display: block;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+nav ul li ul li a:hover {
+    background: rgb(235, 231, 231);
+    color: rgb(198, 148, 83);
+}
+
+nav ul li ul li a::before {
+    border: none;
+}
+
+nav ul li:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+.banner {
+    background: url("https://i.ibb.co/ZY3w0Fm/background.jpg") center center / cover no-repeat rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+    z-index: -99;
+    padding: 150px 0px;
+}
+
+.banner_text h1 {
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 110px;
+    padding-top: 166px;
+}
+
+.banner_text span {
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-top: 25px;
+    font-size: 45px;
+}
+
+.sub-title h2 {
+    font-size: 48px;
+    color: rgb(255, 255, 255);
+    font-weight: 500;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.sub-title .left-span {
+    margin-right: 2%;
+}
+
+.sub-title span {
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    height: 1.5px;
+    width: 5%;
+    margin-left: 1%;
+    margin-bottom: 15px;
+}
+
+.banner_text .button {
+    background: rgb(198, 148, 83);
+    padding: 16px 55px;
+    border-radius: 50px;
+    margin-left: 0px;
+    margin-top: 0px;
+    display: inline-block;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.banner_text .button:hover {
+    background: rgb(255, 255, 255);
+}
+
+.banner_text .button:hover a {
+    color: rgb(198, 148, 83);
+}
+
+.banner_text a {
+    color: rgb(255, 255, 255);
+    display: block;
+    transition: all 0.4s ease 0s;
+}
+
+.banner_text.t_center {
+    padding-bottom: 130px;
+}
+
+.optiondiv {
+    background: rgb(248, 248, 248);
+    padding: 115px 0px;
+    margin: auto;
+}
+
+.option_container {
+    margin: 0px 205px;
+}
+
+.option {
+    width: 23.49%;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    padding: 45px 12px;
+    margin-right: 30px;
+    transition: all 0.8s ease 0s;
+    box-sizing: border-box;
+}
+
+.option:hover img {
+    transform: rotateY(360deg);
+}
+
+.option:hover {
+    background: rgb(213, 212, 210);
+}
+
+.option:hover button {
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.option:hover a {
+    color: rgb(198, 148, 83);
+}
+
+.option button:hover {
+    background: rgb(0, 0, 0);
+    transform: translateY(15px);
+}
+
+.option a:hover {
+    color: rgb(255, 255, 255);
+}
+
+.option:last-child {
+    margin-right: 0px !important;
+}
+
+.option img {
+    height: 70px;
+    transition: all 1s ease 0s;
+}
+
+.option h4 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    padding-top: 40px;
+    font-size: 23px;
+}
+
+.option p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    padding-top: 30px;
+    color: rgb(109, 106, 106);
+    padding-bottom: 15px;
+}
+
+.option button {
+    padding: 12px 20px;
+    background: rgb(198, 148, 83);
+    border: none;
+    margin-top: 30px;
+    margin-left: 10px;
+    border-radius: 7px;
+    transition: all 0.4s ease 0s;
+}
+
+.option a {
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    transition: all 0.4s ease 0s;
+}
+
+.videosec {
+    background: rgb(248, 248, 248);
+    margin: auto;
+    padding: 80px 25px 70px;
+}
+
+.video {
+    width: 48%;
+}
+
+.video_content {
+    width: 50%;
+    margin-left: 25px;
+}
+
+.content h1 {
+    color: rgb(33, 37, 41);
+    padding-bottom: 12px;
+    font-size: 52px;
+}
+
+.content p {
+    color: #5c5b5a;
+    line-height: 1.65;
+    margin-top: 15px;
+    padding-bottom: 30px;
+    font-size: 18px;
+    padding-right: 40px;
+}
+
+.content span {
+    color: rgb(198, 148, 83);
+}
+
+.detailesdiv {
+    padding-top: 25px;
+}
+
+.detailesdiv details {
+    padding-top: 0px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+}
+
+.detailesdiv summary {
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.detailesdiv p {
+    font-size: 18px;
+}
+
+.btn button {
+    padding: 20px 30px;
+    background: rgb(0, 0, 0);
+    border: none;
+    margin-top: 35px;
+    transition: all 0.4s ease 0s;
+}
+
+.btn button:hover {
+    background: rgb(198, 148, 83);
+}
+
+.btn button:hover a {
+    color: rgb(255, 255, 255);
+}
+
+.btn a {
+    font-weight: 500;
+    transition: all 0.4s ease 0s;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+.formsec {
+    background: url("https://i.ibb.co/db1RRGk/bottomimg-prev-ui.png") center top / cover no-repeat rgb(248, 248, 248);
+    padding: 250px 0px 160px;
+}
+
+.form {
+    width: 46%;
+    margin-top: -75px;
+    margin-left: 65px;
+}
+
+.form h1 {
+    color: rgb(33, 37, 41);
+    font-size: 52px;
+}
+
+.form p {
+    font-size: 17px;
+    color: #5c5b5a;
+    line-height: 1.9;
+    margin-top: 16px;
+    padding-bottom: 40px;
+    padding-top: 15px;
+}
+
+.input_defalt {
+    width: 95%;
+    font-size: 20px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    border: 2px solid transparent;
+    outline: none;
+    box-shadow: rgb(221, 221, 221) 1px 1px 7px;
+    margin-bottom: 10px;
+}
+
+.input_defalt:focus {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+textarea.input_defalt {
+    height: 205px;
+}
+
+.send {
+    padding: 25px 40px;
+    background: rgb(198, 148, 83);
+    border: none;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+footer {
+    background-color: #6c6c6c;
+}
+
+.leftfooter {
+    width: 64%;
+}
+
+.leftfooter p {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(221, 221, 221);
+    padding: 30px 0px;
+}
+
+.rightfooter {
+    width: 36%;
+    padding: 25.5px 0px;
+    text-align: center;
+}
+
+.rightfooter a {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(221, 221, 221);
+    margin-left: 35px;
+    font-size: 23px;
+}
